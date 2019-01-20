@@ -22,13 +22,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld'
-//import HelloWorldOdd from './components/HelloWorldOdd'
+import HelloWorldOdd from './components/HelloWorldOdd'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-   // HelloWorldOdd
+    HelloWorldOdd
   },
   data () {
     return {

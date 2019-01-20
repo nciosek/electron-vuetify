@@ -18,7 +18,7 @@ protocol.registerStandardSchemes(['app'], { secure: true })
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({ titleBarStyle: 'hidden' });
-  //win.maximize();
+  win.maximize();
   //win.show();
 
     //icon setting
