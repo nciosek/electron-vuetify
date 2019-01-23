@@ -33,8 +33,9 @@
                         </v-flex>
                     </v-layout>
                 </v-flex>
-
             </v-flex>
+            <v-btn v-on:click="toClick">test</v-btn>
+            <v-btn v-on:click="toOddNumber">odd</v-btn>
         </v-layout>
     </v-container>
 </template>
@@ -48,11 +49,12 @@
         }
     },
       methods: {
+          toClick() {
+              alert(888)
+          },
           toOddNumber() {
               //this.show = false;
-              this.$router.push({
-                  name: 'odd'
-              });
+              this.$router.push('/odd');
               //setTimeout(() => this.$router.push('/odd'), 300);
           }
       }
