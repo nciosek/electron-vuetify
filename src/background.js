@@ -77,12 +77,12 @@ app.on('ready', async () => {
 app.on('ready', ()=>{
     globalShortcut.register('Ctrl+Space', () =>{
         if(max == false){
-            //BrowserWindow.getAllWindows().maximize();
+            win.show();
             max = true
             console.log("set to true")
         }else{
             if(max == true){
-                BrowserWindow.getFocusedWindow().minimize();
+                win.hide();
                 max = false
                 console.log("set to false")
             }}
