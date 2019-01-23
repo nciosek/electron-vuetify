@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Odd from '@/components/HelloWorldOdd'
+import Even from '@/components/HelloWorldEven'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
           path: '/odd',
           name: 'odd',
           component: Odd
+      },
+      {
+        path: '/even',
+          name: 'even',
+          component: Even
       },
     {
       path: '/about',

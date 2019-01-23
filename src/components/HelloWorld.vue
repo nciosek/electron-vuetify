@@ -34,7 +34,8 @@
                     </v-layout>
                 </v-flex>
             </v-flex>
-            <v-btn v-on:click="toOddNumber">odd</v-btn>
+            <v-btn v-on:click="toOddNumber">NIEPARZYSTE</v-btn>
+            <v-btn v-on:click="toEvenNumber">PARZYSTE</v-btn>
         </v-layout>
     </v-container>
 </template>
@@ -48,13 +49,13 @@
           }
       },
       methods: {
-          toClick() {
-              alert(888)
-          },
           toOddNumber() {
               //this.show = false;
               this.$router.push('/odd');
               //setTimeout(() => this.$router.push('/odd'), 300);
+          },
+          toEvenNumber() {
+              this.$router.push('/even');
           }
       }
   }
