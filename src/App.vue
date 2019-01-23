@@ -23,13 +23,11 @@
 
 <script>
 import HelloWorld from './components/HelloWorld'
-//import HelloWorldOdd from './components/HelloWorldOdd'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
-   // HelloWorldOdd
   },
   data () {
     return {

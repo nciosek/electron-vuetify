@@ -34,7 +34,6 @@
                     </v-layout>
                 </v-flex>
             </v-flex>
-            <v-btn v-on:click="toClick">test</v-btn>
             <v-btn v-on:click="toOddNumber">odd</v-btn>
         </v-layout>
     </v-container>
@@ -43,11 +42,11 @@
 <script>
   export default {
     data: () => {
-        return {
-            show: true,
-            date: null
-        }
-    },
+          return {
+              show: true,
+              date: null
+          }
+      },
       methods: {
           toClick() {
               alert(888)
